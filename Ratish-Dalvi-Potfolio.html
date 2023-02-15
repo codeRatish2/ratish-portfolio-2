@@ -6,9 +6,14 @@
             body{
                 font-family: "Roboto", sans-serif;
                 box-sizing: border-box;
+                font-size: 15px;
+                font-size: 400;
+                line-height: 1em;
+
             }
             *{
                 box-sizing: border-box;
+                
         
             }
             h2{
@@ -26,20 +31,34 @@
                 border-radius: 50%;
             }
             .about_me{
-                position: relative;
-                column-count: 2;
-                column-gap:10%;
-                margin-top: 350px;
-                margin-left: 60px;
-                line-height: 1.2;
+             position: relative;   
+            column-gap: 10px;
+            margin-top: 230px;
+            margin-left: 100px;
+            margin-right: 60px;
+            padding-bottom: 240px;
+    
             }
+            .about-1{
+                float: left;
+                width: 45%;
+            }
+            .about-2{
+                float: right;
+                width: 45%;
+            }
+
             .skills{
                 width: 100%;
-                background-color: #999898;
+                background-color: #c5c5c5;
+                
             }
-            .html {width: 90%; background-color: #0e85f5;}
-            .css {width: 80%; background-color: #0e85f5;}
-            .js{width: 60%;background-color: #0e85f5;}
+            .skill{
+                text-align: right;
+            }
+            .html {width: 90%; background-color: #18dcff;}
+            .css {width: 80%; background-color: #18dcff;}
+            .js{width: 60%;background-color: #18dcff;}
             .about-2{
                 padding-left: 10px;
             }
@@ -55,7 +74,7 @@
                font-size: 4.5rem; 
                font-weight: 300;
                line-height: 1.2; 
-               margin-top: 138px;
+               margin-top: 225px;
                margin-left: 200px;
 
             }
@@ -69,18 +88,20 @@
             }
             .display_2{
                 position:relative ;
-                font-size: 40px;
+                font-size: 3.5rem;
                 font-weight: 300;
                 line-height: 1.2;
+                padding-top:40px ;
             }
             .bold-text{
                 position: absolute;
-                top: -104px;
+                top: -7px;
                 left: 10px;
                 color: rgba(116, 101, 101, 0.08);
                 text-transform: uppercase;
                 font-size: 6em;
                 font-weight: 700;
+                margin-left: 60px;
             }
             i{
             color: #0e85f5;
@@ -88,8 +109,8 @@
             .tech-stack{
                 position: relative;
                 margin-top: 167px;
-                margin-left: 60px;
-                padding-top: 1px;
+                margin-left: 100px;
+                padding-top: px;
                 padding-bottom: 114px;
             }
             .icon-png img{
@@ -103,13 +124,12 @@
 
             }
             .icon-png{
-                position: relative;
                 padding-left: 200px;
             }
             .icon-png p {
-                position: absolute;
+                float: right;
                 font-weight: 300;
-                margin: 0;
+                margin: 12px 0 0 -2px;
                 padding: 0;
                 padding-left: 0.5rem;
                 line-height: 1;
@@ -120,35 +140,71 @@
                 position: relative;
                 padding-left: 10px;
                 padding-bottom: 10px;
-                margin-left: 60px;
+                margin-left: 100px;
 
             } 
-            .education .display_2 {
-                margin-top: 1px;
-                font-size: 40px;
-            }
+            
+        
             .Experiance{
                 position: relative;
-                margin-left: 60px;
+                margin-left: 100px;
             }
             .Experiance .display_2{
                 font-size: 40px;
             }
             .Project{
                 position: relative;
+                margin-left: 100px;
             }
+            li{
+                line-height: 3;
+                text-decoration: none;
+            }
+            .about-2{
+                padding-right: 10px;
+            }
+            .line{
+                font-size: 1.2rem;
 
+            }
+            .resume{
+                font-size: 30px;
+                font-weight: 400;
+                color: #c5c5c5;
+            }
+            .about-1 .display_2{
+                padding-top: 1px;
+            }
+            .Experiance li{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .Achivments{
+                position: relative;
+                margin-left: 100px;
+            }
+            .contacts{
+                position: relative;
+                margin-left: 100px;
+                line-height: 0.8;
+                margin-bottom: 50px;
+            }
+            
+            .icons i:hover{
+                color: #111;
+            }
             
             
-            
-        </style>
+         </style>
     </head>
     <body>
+        <nav class="resume">Resume</nav>
         <div class="container">
             <div class="column_50">
+            
               <h1 class="display_1">Ratish Dalvi</h1>
               <p class="line">Front End Devloper</p>
-              <img class="Ratishphotos" src="DSC_0154.jpg" alt=" Ratishphots" height="300px" width="300px">
+              <img class="Ratishphoto" src="DSC_0154.jpg" alt=" Ratishphoto" height="400px" width="400px">
             </div>
         </div>
         <section class="about_me">
@@ -156,17 +212,17 @@
                
                 <h1 class="display_2"> A little About me,</h1>
                 <h1 class="bold-text">About</h1>
-                <h2>Hello!</h2>
+                <p style="font-size: 2rem;">Hello!</p>
                 <p>My Name is Ratish. I am graduate from J.S.M college,Alibag Mumbai University.
                    An avid learner with interest in Computer Programming Languages and Software Development.
                 </p>
-                 <div class="icons">
-                   <i class="fa-sharp fa-solid fa-envelope"></i>
-                   <i class="fa-brands fa-github"></i>
-                   <i class="fa-brands fa-linkedin"></i>
-                   <i class="fa-brands fa-facebook"></i>
-                   <i class="fa-brands fa-square-twitter"></i>
-                </div>   
+                <div class="icons">
+                    <a href="#"></a><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/codeRatish2"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ratish-dalvi-b7a00722a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/Ratiesh.dalvi2/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/ratiesh_d"><i class="fa-brands fa-square-twitter"></i></a>
+                 </div>   
 
             </div>
             <div class="about-2">
@@ -208,22 +264,87 @@
          <section class="education">
             <h1 class="display_2">Education</h1>
             <h1 class="bold-text">Academics</h1>
-            <h4>Graduation in B.com</h4>
-            <h6>J.S.M College, Alibag-Raigad</h6>
+            <h2>Graduation in B.com</h2>
+            <h4>J.S.M College, Alibag-Raigad</h4>
             <p>Grade: A+</p>
         </section>
         <section class="Experiance">
             <h1 class="display_2">Experiance</h1>
             <h1 class="bold-text">profile</h1>
+            <div class="Experiance-list">
+                <ul>
+                    <li>Boganvillea Resort- Nagoan</li>
+                        <P>Houskeeping And Food Bevrage </P> 
+                    <li>KarpeWadi</li>
+                       <P>Restro Manager</P>
+                    <li>Casuarina Resort</li>
+                       <p>Asst.Manager</p>
+                    <li>Workster</li>
+                    <p>Receptionst</p>
+                </ul>
+
+            </div>
 
         </section>
         <section class="Project">
             <h1 class="display_2">Project</h1>
             <h1 class="bold-text">portfolio</h1>
             <h4>Found 4 you</h4>
-            <a href="https://github.com/codeRatish2">github link</a>
+            <a href="https://github.com/codeRatish2">Github link</a>
+            <div class="project-list">
+                <ul>
+                    <li>
+                        <a href="https://github.com/codeRatish2/CLI-APP">CLI APP</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codeRatish2/-Flex-Temlpate-Project">Flex Template Project</a>
+
+                    </li>
+                    <li>
+                        <a href="https://github.com/codeRatish2/Geektrust-Admin-UI">Greektrust Admin UI</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codeRatish2/Log-in-form">Log In Form</a>
+
+                    </li>
+                </ul>
+                <div>
+                    <li>A simple social media app that allows users to post interesting events that happened in their lives.</li>
+                    <li>Implemented like button,delete button, Pagination and Validation. </li>
+                    <li> Frontend is styled using Material-Ui for user friendly interface </li>
+                    
+                </div>
+            </div>
 
         </section>
+        <section class="Achivments">
+            <h1 class="display_2">Achivments</h1>
+            <h1 class="bold-text">Honours</h1>
+            <ul>
+                <li>Re-organized something to make it work better.</li>
+                <li>Identified a problem and solved it.</li>
+                <li>Come up with a new idea that improved things.</li>
+                <li>Developed or implemented new procedures or systems.</li>
+                <li>Worked on special projects.</li>
+            </ul>
+           
+        </section>
+        <section class="contacts">
+            <h1 class="display_2">Let's Talk</h1>
+            <h1 class="bold-text">contact</h1>
+            <h3>Want to connect?</h3>
+            <h3>MY Inbox is always open!</h3>
+            <div class="icons">
+               <a href="#"></a><i class="fa-sharp fa-solid fa-envelope"></i></a>
+               <a href="https://github.com/codeRatish2"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/ratish-dalvi-b7a00722a/"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://www.facebook.com/Ratiesh.dalvi2/"><i class="fa-brands fa-facebook"></i></a>
+               <a href="https://twitter.com/ratiesh_d"><i class="fa-brands fa-square-twitter"></i></a>
+             </div>   
+
+        </section>
+
+            
         
     
 
